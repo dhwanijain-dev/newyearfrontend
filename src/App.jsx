@@ -11,7 +11,7 @@ const App = () => {
     formData.append('name', name)
 
     try {
-      const response = await fetch('https://newyearbackend-1.onrender.com', {
+      const response = await fetch('https://newyearbackend-1.onrender.com/generate-ticket', {
         method: 'POST',
         body: formData,
       })
